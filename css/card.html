@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>SoukCraft - Shopping Cart</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./img/logo-png.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="remove-btn"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./img/products/prod1.png" alt=""></td>
+                    <td>Poterie Marocaine</td>
+                    <td>$20.00</td>
+                    <td><input type="number" value="1" min="1" class="quantity"></td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="remove-btn"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./img/products/prod2.png" alt=""></td>
+                    <td>Poterie Marocaine Deluxe</td>
+                    <td>$30.00</td>
+                    <td><input type="number" value="1" min="1" class="quantity"></td>
+                    <td>$30.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+
+            <div id="subtotal">
+                <h3>Cart Totals</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$50.00</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to checkout</button>
+            </div>
+        </div>
+
+        <!-- Empty Cart State (initially hidden, show with JavaScript when cart is empty) -->
+        <div class="empty-cart" style="display: none;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>Your cart is empty</h2>
+            <p>Browse our amazing collection of Moroccan artisanal products</p>
+            <a href="shop.html" id="continue-shopping">Continue Shopping</a>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="colm">
+            <img src="./img/logo-png.png" class="logo1" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Agadir, Maroc</p>
+            <p><strong>Phone: </strong> +212 123456789</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="colm">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="colm">
+            <h4>My Account</h4>
+            <a href="#">Sign Up</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="clom install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <a href="#"><i class="fa-brands fa-app-store-ios"></i></a>
+                <a href="#"><i class="fa-brands fa-google-play"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 SoukCraft | All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

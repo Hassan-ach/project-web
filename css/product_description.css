@@ -1,0 +1,112 @@
+        .product-details {
+            padding: 40px 80px;
+            display: flex;
+            gap: 50px;
+            margin-top: 20px;
+            border-bottom: 2px black solid;
+        }
+
+        .single-pro-image {
+            width: 40%;
+        }
+
+        .single-pro-image img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+
+        .small-img-col img {
+            width: 100%;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .small-img-col img:hover {
+            transform: scale(1.1);
+        }
+
+        .single-pro-details {
+            width: 50%;
+            padding-top: 30px;
+        }
+
+        .single-pro-details h4 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .single-pro-details h2 {
+            font-size: 32px;
+            color: #088178;
+            margin-bottom: 20px;
+        }
+
+        .single-pro-details select {
+            padding: 5px 10px;
+            margin-bottom: 20px;
+            border: 1px solid #088178;
+            border-radius: 4px;
+        }
+
+        .single-pro-details input {
+            width: 70px;
+            height: 47px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            border: 1px solid #088178;
+            border-radius: 4px;
+        }
+
+        .single-pro-details button {
+            background-color: #088178;
+            color: white;
+        }
+
+        .single-pro-details button:hover {
+            background-color: #035652;
+        }
+
+        .single-pro-details span {
+            line-height: 25px;
+            color: #465b52;
+        }
+
+        .product-features {
+            margin-top: 30px;
+        }
+
+        .product-features h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-features ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .product-features li {
+            margin-bottom: 8px;
+            color: #465b52;
+            position: relative;
+        }
+
+        .product-features li:before {
+            content: "•";
+            color: #088178;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
