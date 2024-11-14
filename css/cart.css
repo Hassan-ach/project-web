@@ -70,6 +70,8 @@
     color: red;
     font-size: 20px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .remove-btn:hover {

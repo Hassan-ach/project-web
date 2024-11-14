@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <title>SoukCraft - Shopping Cart</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <section id="header">
-        <a href="#"><img src="./img/logo-png.png" class="logo" alt=""></a>
+        <a href="./index.html"><img src="./img/logo-png.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#" class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
     </section>
@@ -34,9 +35,9 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#" class="remove-btn"><i class="far fa-times-circle"></i></a></td>
+            <tbody id="productsCart">
+                <!-- <tr>
+                    <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
                     <td><img src="./img/products/prod1.png" alt=""></td>
                     <td>Poterie Marocaine</td>
                     <td>$20.00</td>
@@ -44,13 +45,13 @@
                     <td>$20.00</td>
                 </tr>
                 <tr>
-                    <td><a href="#" class="remove-btn"><i class="far fa-times-circle"></i></a></td>
+                    <td><button class="remove-btn"><i class="far fa-times-circle"></i></button></td>
                     <td><img src="./img/products/prod2.png" alt=""></td>
                     <td>Poterie Marocaine Deluxe</td>
                     <td>$30.00</td>
                     <td><input type="number" value="1" min="1" class="quantity"></td>
                     <td>$30.00</td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
 
@@ -68,7 +69,7 @@
                 <table>
                     <tr>
                         <td>Cart Subtotal</td>
-                        <td>$50.00</td>
+                        <td>$0.00</td>
                     </tr>
                     <tr>
                         <td>Shipping</td>
@@ -76,7 +77,7 @@
                     </tr>
                     <tr>
                         <td><strong>Total</strong></td>
-                        <td><strong>$50.00</strong></td>
+                        <td><strong>$0.00</strong></td>
                     </tr>
                 </table>
                 <button class="normal">Proceed to checkout</button>
