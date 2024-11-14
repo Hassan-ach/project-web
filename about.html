@@ -4,34 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>SoukCraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>SoukCraft - About Us</title>
 </head>
 <body>
-    <table style="width: 100%;">
-        <tr>
-            <td align="center"><a href="index.html" ><img src="logo-png.png" alt="logo" width="70px"></a></td>
-            <td align="center"><a href="index.html">Home</a></td>
-            <td align="center"><a href="shope.html">Shope</a></td>
-            <td align="center"><a href="about.html">About</a></td>
-            <td align="center"><a href="contact.html">Contact</a></td>
-        </tr>
-    </table>
-    <hr>
-    <table style="min-width: 100%;">
-        <tr>
-            <td >
-                <h1 style="padding-left: 50px;">SoukCraft</h1>
-                <p style="max-width: 50%;
-                            padding-left:50px;">SoukCraft est une boutique en ligne dédiée à la promotion et à la vente d’artisanat marocain authentique. Chaque article est soigneusement fabriqué à la main par des artisans locaux, en utilisant des techniques traditionnelles transmises de génération en génération. Notre mission est de préserver cet héritage culturel en offrant des produits uniques et éthiques, fabriqués avec des matériaux durables et respectueux de l'environnement. Chez SoukCraft, chaque achat soutient directement les artisans et leurs communautés, tout en apportant un morceau de l’art marocain chez vous.</p>
-            </td>
-            <td align="center">
-                <img src="logo-png-text.png" alt="" style="min-width: 50vh;">
-            </td>
-        </tr>
-    </table>
-    <fieldset>
-        <footer>
+    <section id="header">
+        <a href="./index.html"><img src="./img/logo-png.png" class="logo" alt="SoukCraft Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about-hero" class="banner">
+        <h2>Notre Histoire</h2>
+        <h1>L'Artisanat Marocain</h1>
+    </section>
+
+    <section class="about-content section-p1">
+        <div class="story">
+            <h2>Notre Mission</h2>
+            <p>Chez SoukCraft, notre mission est de préserver et promouvoir le riche patrimoine artisanal du Maroc tout en créant des opportunités économiques durables pour nos artisans talentueux. Nous servons de pont entre les artisans traditionnels marocains et les amateurs d'art du monde entier.</p>
+            
+            <h2>Notre Vision</h2>
+            <p>Nous aspirons à devenir la première destination en ligne pour l'artisanat marocain authentique, en maintenant les traditions séculaires tout en adoptant l'innovation moderne pour atteindre un public mondial.</p>
+
+            <h2>Nos Valeurs</h2>
+            <div class="values-container">
+                <div class="value-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Authenticité</h3>
+                    <p>Chaque produit raconte une histoire authentique de l'artisanat marocain.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Équité</h3>
+                    <p>Nous assurons une rémunération équitable à nos artisans partenaires.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Durabilité</h3>
+                    <p>Nous privilégions les pratiques durables et respectueuses de l'environnement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artisan-feature" class="section-p1">
+        <h2>Nos Artisans</h2>
+        <p>Découvrez les maîtres artisans qui créent nos produits exceptionnels</p>
+        <div class="artisan-container">
+            <div class="artisan">
+                <img src="./img/00.webp" alt="Artisan working on pottery">
+                <h3>L'Art de la Céramique</h3>
+                <p>Nos céramistes perpétuent des techniques ancestrales transmises de génération en génération.</p>
+            </div>
+            <div class="artisan">
+                <img src="./img/01.jpg" alt="Artisan working on carpet">
+                <h3>Tissage Traditionnel</h3>
+                <p>Chaque tapis raconte une histoire unique à travers ses motifs et ses couleurs.</p>
+            </div>
+            <div class="artisan">
+                <img src="./img/02.jpg" alt="Artisan working on leather">
+                <h3>Artisanat du Cuir</h3>
+                <p>Le travail du cuir est un art qui requiert patience et précision.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="colm">
+            <img src="./img/logo-png.png" class="logo1" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 123 Rue des Artisans, Agadir, Maroc</p>
+            <p><strong>Phone: </strong> +212 123456789/+212 987654321</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="colm">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="colm">
+            <h4>My Account</h4>
+            <a href="#">Sign Up</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="clom install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <a href="#"><i class="fa-brands fa-app-store-ios"></i></a>
+                <a href="#"><i class="fa-brands fa-google-play"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
             <p>&copy; 2024 SoukCraft | All rights reserved</p>
-        </footer>
-    </Fieldset>
+        </div>
+    </footer>
 </body>
+</html>

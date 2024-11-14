@@ -4,92 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <title>SoukCraft</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <table style="width: 100%;">
-        <tr>
-            <td align="center"><a href="index.html" ><img src="logo-png.png" alt="logo" width="70px"></a></td>
-            <td align="center"><a href="index.html">Home</a></td>
-            <td align="center"><a href="shope.html">Shope</a></td>
-            <td align="center"><a href="about.html">About</a></td>
-            <td align="center"><a href="contact.html">Contact</a></td>
-        </tr>
-    </table>
-    <hr>
-    <div align="center"><a href="shope.html#Poterie-et-Ceramiques"><img src="0.webp" alt="cat"></a></div>
-    <table style="width: 100%;">
-        <tr class="products-container">
-            <td align="center">
-                <div class="carte-produit">
-                    <a href="products/Poterie-et-Ceramiques/1.html"><img src="products/Poterie-et-Ceramiques/1.webp" alt=""></a>
-                    <h2 align = "center">name of product</h2>
-                    <h4 align = "center">prix $$</h4>
+    <section id="header">
+        <a href="index.html"><img src="./img/logo-png.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class = "active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="hero">
+        <div>
+            <h4>Bienvenue sur SoukCraft</h4>
+            <h2>Votre Destination pour </h2>
+            <h1>l'Artisanat Marocain Authentique !</h1>
+            <p>Save more with coupons & uo to 70% off!</p>
+            <button class="normal">Shope Now</button>
+        </div>
+    </section>
+    <section id="feature" class="section-p1">
+        <div id = "ft-box" class="">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h4>Fast & Free Shipping</h4>
+            <p>Jusqu’à la fin de sa vie, personne ne veut être joueur. Il n'aime pas les camions. Un certain vulputé.</p>
+        </div>
+        <div id = "ft-box">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <h4>Easy to Shop</h4>
+            <p>Jusqu’à la fin de sa vie, personne ne veut être joueur. Il n'aime pas les camions. Un certain vulputé.</p>
+        </div>
+        <div id = "ft-box">
+            <i class="fa-solid fa-life-ring"></i>
+            <h4>24/7 Support</h4>
+            <p>Jusqu’à la fin de sa vie, personne ne veut être joueur. Il n'aime pas les camions. Un certain vulputé.</p>
+        </div>
+        <div id = "ft-box">
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+            <h4>Hassle Free Returns</h4>
+            <p>Jusqu’à la fin de sa vie, personne ne veut être joueur. Il n'aime pas les camions. Un certain vulputé.</p>
+        </div>
+    </section>
+
+    <section id="product" class="section-p1">
+        <h1>Featured Products</h1>
+        <p></p>
+        <div class="pro-container">
+            <div class="pro">
+                <a href="./product_description.html?id=1">
+                    <img src="./img/products/prod1.png" alt="">
+                    <div class="des">
+                        <span>Ceramic</span>
+                        <h5>Poterie Marocaine</h5>
+                        <h4>20$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="./product_description.html?id=2">
+                    <img src="./img/products/prod2.png" alt="">
+                    <div class="des">
+                        <span>Ceramic</span>
+                        <h5>Vase Traditionnel</h5>
+                        <h4>25$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="./product_description.html?id=3">
+                    <img src="./img/products/prod3.png" alt="">
+                    <div class="des">
+                        <span>Textile</span>
+                        <h5>Tapis Berbère</h5>
+                        <h4>150$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="product_description.html?id=4">
+                    <img src="./img/products/prod4.png" alt="">
+                    <div class="des">
+                        <span>Leather</span>
+                        <h5>Pouf en Cuir</h5>
+                        <h4>45$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="./product_description.html?id=5">
+                    <img src="./img/products/prod5.png" alt="">
+                    <div class="des">
+                        <span>Metal</span>
+                        <h5>Lanterne Marocaine</h5>
+                        <h4>35$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="./product_description.html?id=6">
+                    <img src="./img/products/prod6.png" alt="">
+                    <div class="des">
+                        <span>Textile</span>
+                        <h5>Coussin Brodé</h5>
+                        <h4>30$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="./product_description.html?id=7">
+                    <img src="./img/products/prod7.png" alt="">
+                    <div class="des">
+                        <span>Ceramic</span>
+                        <h5>Tajine Décoratif</h5>
+                        <h4>40$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="./product_description.html?id=8">
+                    <img src="./img/products/prod8.png" alt="">
+                    <div class="des">
+                        <span>Basket</span>
+                        <h5>Panier en Osier</h5>
+                        <h4>28$</h4>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id = "banner" class="banner section-p1">
+        <h4>Repair services</h4>
+        <h2>Up to <span>70% Off</span> - All Products</h2>
+        <button class="normal">Explore More</button>
+    </section>
+    <section id="discreption" >
+        <div>
+            <h2>Fabrique à la main avec amour</h2>
+            <p>Pour chaque matière naturelle, il existe une tradition marocaine de travail à la main pour l’enrichir d’un savoir-faire artisanal raffine. Les artisans marocains mettent tout leur cœur et leur âme dans leur travail, souvent dans des ateliers familiaux où le savoir-faire artisanal et les motifs traditionnels se transmettent de generation en generation. L’artisanat marocain fait ressortir le meilleur du savoir-faire des artisans ainsi que les qualites des matières premières telles que la laine, le cuir, l’argile et le laiton. Cette utilisation de materiaux simples signifie egalement que leurs produits dureront et vieilliront avec grâce.</p>
+        </div>
+        <img src="./img/00.webp" alt="img">
+    </section>
+    
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="colm">
+            <img src="./img/logo-png.png" class="logo1" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 123 Rue des Artisans, Agadir, Maroc</p>
+            <p><strong>Phone: </strong> +212 123456789/+212 987654321</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
                 </div>
-            </td>
-            <td align="center">
-                <div class="carte-produit">
-                    <a href="products/Poterie-et-Ceramiques/3.html"><img src="products/Poterie-et-Ceramiques/3.webp" alt=""></a>
-                    <h2 align = "center">name of product</h2>
-                    <h4 align = "center">prix $$</h4>
-                </div>
-            </td>
-            <td align="center">
-                <div class="carte-produit">
-                    <a href="products/Poterie-et-Ceramiques/4.html"><img src="products/Poterie-et-Ceramiques/4.webp" alt=""></a>
-                    <h2 align = "center">name of product</h2>
-                    <h4 align = "center">prix $$</h4>
-                </div>
-            </td>
-        </tr>
-        <tr class="products-container">
-            <td align="center">
-                <div class="carte-produit">
-                    <a href="products/Poterie-et-Ceramiques/5.html"><img src="products/Poterie-et-Ceramiques/5.webp" alt=""></a>
-                    <h2 align = "center">name of product</h2>
-                    <h4 align = "center">prix $$</h4>
-                </div>
-            </td>
-            <td align="center">
-                <div class="carte-produit">
-                    <a href="products/Poterie-et-Ceramiques/6.html"><img src="products/Poterie-et-Ceramiques/6.webp" alt="" style="min-width: 500px;"></a>
-                    <h2 align = "center">name of product</h2>
-                    <h4 align = "center">prix $$</h4>
-                </div>
-            </td>
-            <td align="center">
-                <div class="carte-produit">
-                    <a href="products/Poterie-et-Ceramiques/8.html"><img src="products/Poterie-et-Ceramiques/8.webp" alt=""></a>
-                    <h2 align = "center">name of product</h2>
-                    <h4 align = "center">prix $$</h4>
-                </div>
-            </td>
-        </tr>
-        <tr></tr>
-            <td colspan="3" align="center"> <input type="button" value="view all products" onclick="location.href='shope.html'"></td>
-        </tr>
-    </table>
-    <table style="width: 100%;">
-        <tr>
-            <td>
-                <h1>Fabrique à la main avec amour</h1>
-                <p style="max-width: 50%;">Pour chaque matière naturelle, il existe une tradition marocaine de travail à la main pour l’enrichir d’un savoir-faire artisanal raffine.
-                    Les artisans marocains mettent tout leur cœur et leur âme dans leur travail, souvent dans des ateliers familiaux où le savoir-faire artisanal et les motifs traditionnels se transmettent de generation en generation.
-                    L’artisanat marocain fait ressortir le meilleur du savoir-faire des artisans
-                    ainsi que les qualites des matières premières telles que la laine, le cuir, l’argile et le laiton. Cette utilisation de materiaux simples signifie egalement que leurs produits dureront et vieilliront avec grâce.</p>
-            </td>
-            <td>
-                <img src="00.webp" alt="" style="min-width: 50vh;">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center"> <input type="button" value="view all products" onclick="location.href='shope.html'"></td>
-        </tr>
-    </table>
-   
-    <fieldset>
-        <footer>
+            </div>
+        </div>
+        <div class="colm">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delevery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="colm">
+            <h4>My Account</h4>
+            <a href="#">Sign Up</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="clom install">
+            <h4>Install App</h4>
+            <p>Frome App Store or Google Play</p>
+            <div class="row">
+                <a href="#"><i class="fa-brands fa-app-store-ios"></i></a>
+                <a href="#"><i class="fa-brands fa-google-play"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
             <p>&copy; 2024 SoukCraft | All rights reserved</p>
-        </footer>
-    </Fieldset>
+        </div>
+    </footer>
+
 </body>
+</html>
